@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Completo — Despacho Gerardo F. González López</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="portafolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="page-portafolio">
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-logo">
+      <a href="index.html" style="text-decoration:none">
+        <span class="logo-main">GFG</span>
+        <span class="logo-sub">Gerardo F. González López · Oaxaca</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#firma">La Firma</a></li>
+      <li><a href="index.html#metodologia">Metodología</a></li>
+      <li><a href="index.html#blog">Recursos</a></li>
+      <li><a href="index.html#contacto" class="nav-cta">Consultoría</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="pf-hero">
+    <div class="pf-hero-bg"></div>
+    <div class="pf-hero-overlay"></div>
+    <div class="pf-hero-content">
+      <a href="index.html" class="pf-back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Volver al inicio
+      </a>
+      <p class="section-eyebrow">Obra documentada · 25 años</p>
+      <h1 class="pf-hero-title">Portafolio <em>Completo</em></h1>
+      <p class="pf-hero-desc">Proyectos residenciales, comerciales, de infraestructura e industriales en Oaxaca y el sureste de México.</p>
+      <div class="pf-hero-stats">
+        <div class="pf-stat">
+          <span class="pf-stat-n" data-target="18">0</span>
+          <span class="pf-stat-lbl">Proyectos</span>
+        </div>
+        <div class="pf-stat-sep"></div>
+        <div class="pf-stat">
+          <span class="pf-stat-n" data-target="4">0</span>
+          <span class="pf-stat-lbl">Categorías</span>
+        </div>
+        <div class="pf-stat-sep"></div>
+        <div class="pf-stat">
+          <span class="pf-stat-n" data-target="25">0</span>
+          <span class="pf-stat-lbl">Años de trayectoria</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== CONTROLES ========== -->
+  <div class="pf-controls" id="pfControls">
+    <div class="pf-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="residencial">Residencial</button>
+      <button class="filter-btn" data-filter="infraestructura">Infraestructura</button>
+      <button class="filter-btn" data-filter="comercial">Comercial</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+    </div>
+    <div class="pf-right-controls">
+      <div class="pf-view-toggle">
+        <button class="view-btn active" id="viewGrid" aria-label="Cuadrícula">
+          <svg viewBox="0 0 20 20" fill="currentColor"><rect x="1" y="1" width="7" height="7" rx="1"/><rect x="12" y="1" width="7" height="7" rx="1"/><rect x="1" y="12" width="7" height="7" rx="1"/><rect x="12" y="12" width="7" height="7" rx="1"/></svg>
+        </button>
+        <button class="view-btn" id="viewList" aria-label="Lista">
+          <svg viewBox="0 0 20 20" fill="currentColor"><rect x="1" y="2" width="18" height="3" rx="1"/><rect x="1" y="8.5" width="18" height="3" rx="1"/><rect x="1" y="15" width="18" height="3" rx="1"/></svg>
+        </button>
+      </div>
+      <div class="pf-count" id="pfCount">Mostrando <strong>18</strong> proyectos</div>
+    </div>
+  </div>
+
+  <!-- ========== PROYECTOS ========== -->
+  <main class="pf-main">
+    <div class="pf-grid" id="pfGrid">
+
+      <!-- RESIDENCIAL -->
+      <article class="pf-card" data-category="residencial" data-id="r1">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Residencial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2022</span><span class="sep">·</span><span>Oaxaca, Oax.</span></div>
+          <h2>Casa Pedregal Oaxaca</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Terreno con desnivel de 6m y suelo volcánico variable.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Cimentación profunda con micropilotes y diseño escalonado.</p>
+          <div class="pf-card-tags"><span>Cimentación</span><span>Diseño estructural</span><span>680 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="residencial" data-id="r2">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Residencial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2024</span><span class="sep">·</span><span>San Felipe del Agua, Oax.</span></div>
+          <h2>Residencia San Felipe</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Integración de sótano triple en zona de sismicidad media.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Sistema de aislamiento sísmico con disipadores de energía.</p>
+          <div class="pf-card-tags"><span>Sismoresistente</span><span>Sótano</span><span>1,200 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="residencial" data-id="r3">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Residencial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2021</span><span class="sep">·</span><span>Huayapam, Oax.</span></div>
+          <h2>Casa Huayapam</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Construcción en ladera con pendiente del 35% y acceso limitado.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Estructura en voladizo con muros de contención escalonados.</p>
+          <div class="pf-card-tags"><span>Ladera</span><span>Voladizo</span><span>420 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="residencial" data-id="r4">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Residencial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2023</span><span class="sep">·</span><span>Colonia Reforma, Oax.</span></div>
+          <h2>Conjunto Habitacional Reforma</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> 6 viviendas en predio angosto con colindancias en tres lados.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Diseño con pozos de luz y marcos de concreto adosados.</p>
+          <div class="pf-card-tags"><span>Conjunto</span><span>6 viviendas</span><span>780 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card pf-card--featured" data-category="residencial" data-id="r5">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Residencial</span>
+          <span class="pf-badge pf-badge--gold">★ Destacado</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2024</span><span class="sep">·</span><span>Sierra Juárez, Oax.</span></div>
+          <h2>Casa de Campo Sierra Juárez</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Construcción en zona boscosa con acceso limitado y clima extremo.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Madera laminada local con cimentación ciclópea de mínimo impacto ambiental.</p>
+          <div class="pf-card-tags"><span>Madera laminada</span><span>Bioclimático</span><span>320 m²</span></div>
+        </div>
+      </article>
+
+      <!-- COMERCIAL -->
+      <article class="pf-card" data-category="comercial" data-id="c1">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Comercial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2023</span><span class="sep">·</span><span>Centro Histórico, Oax.</span></div>
+          <h2>Edificio Corporativo Centro</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> 8 niveles en zona patrimonial con restricciones INAH.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Fachada de cantera verde con estructura interior independiente.</p>
+          <div class="pf-card-tags"><span>Patrimonio</span><span>8 niveles</span><span>3,200 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="comercial" data-id="c2">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Comercial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2022</span><span class="sep">·</span><span>Oaxaca, Oax.</span></div>
+          <h2>Plaza Comercial Las Canteras</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Renovación estructural con locatarios en operación continua.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Refuerzo por etapas con apuntalamiento temporal nocturno.</p>
+          <div class="pf-card-tags"><span>Renovación</span><span>En operación</span><span>2,100 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="comercial" data-id="c3">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Comercial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2020</span><span class="sep">·</span><span>Oaxaca, Oax.</span></div>
+          <h2>Hotel Boutique El Ángelus</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Remodelación de casona colonial del siglo XIX sin alterar estructura original.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Instalaciones modernas con técnica de restauración patrimonial.</p>
+          <div class="pf-card-tags"><span>Restauración</span><span>Patrimonio</span><span>1,500 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card pf-card--featured" data-category="comercial" data-id="c4">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1577495508048-b635879837f1?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Comercial</span>
+          <span class="pf-badge pf-badge--gold">★ Destacado</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2023</span><span class="sep">·</span><span>Jalatlaco, Oax.</span></div>
+          <h2>Restaurante Tierra Viva</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Terraza cubierta sin alterar la estructura centenaria de la casona.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Estructura metálica autoportante con cubierta de vidrio templado.</p>
+          <div class="pf-card-tags"><span>Terraza</span><span>Vidrio templado</span><span>280 m²</span></div>
+        </div>
+      </article>
+
+      <!-- INFRAESTRUCTURA -->
+      <article class="pf-card" data-category="infraestructura" data-id="i1">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Infraestructura</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2021</span><span class="sep">·</span><span>Etla, Oax.</span></div>
+          <h2>Puente Vehicular Etla</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Cruce de 32m sobre río con crecidas estacionales y suelo blando.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Puente de concreto presforzado sobre pilotes colados en sitio.</p>
+          <div class="pf-card-tags"><span>Presforzado</span><span>Pilotes</span><span>32 m</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="infraestructura" data-id="i2">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Infraestructura</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2019</span><span class="sep">·</span><span>Miahuatlán, Oax.</span></div>
+          <h2>Carretera Miahuatlán–Pochutla</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> 18 km en Sierra Sur con taludes inestables y lluvias extremas.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Obras de drenaje mayor y menor, muros de mampostería y señalamiento.</p>
+          <div class="pf-card-tags"><span>Carretera</span><span>18 km</span><span>Drenaje</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card pf-card--featured" data-category="infraestructura" data-id="i3">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Infraestructura</span>
+          <span class="pf-badge pf-badge--gold">★ Destacado</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2022</span><span class="sep">·</span><span>Huatulco, Oax.</span></div>
+          <h2>Marina y Muelle Turístico Huatulco</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Cimentación costera con suelos saturados y normativa ambiental marina.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Pilotes de acero hincados con plataforma de concreto marino resistente a cloruros.</p>
+          <div class="pf-card-tags"><span>Costa</span><span>Pilotes</span><span>Concreto marino</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="infraestructura" data-id="i4">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Infraestructura</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2020</span><span class="sep">·</span><span>Oaxaca, Oax.</span></div>
+          <h2>Planta Potabilizadora SAPAO</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Estructuras hidráulicas en zona sísmica para planta de tratamiento.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Cisternas de concreto armado con juntas elastoméricas y recubrimiento epóxico.</p>
+          <div class="pf-card-tags"><span>Hidráulica</span><span>Antisísmica</span><span>Civil</span></div>
+        </div>
+      </article>
+
+      <!-- INDUSTRIAL -->
+      <article class="pf-card" data-category="industrial" data-id="ind1">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Industrial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2023</span><span class="sep">·</span><span>Parque Industrial, Oax.</span></div>
+          <h2>Nave Industrial Parque Oaxaca</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Claros libres de 30m con cargas dinámicas de maquinaria pesada.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Marcos rígidos de acero con análisis de vibración dinámica.</p>
+          <div class="pf-card-tags"><span>Acero</span><span>30m claro</span><span>4,200 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="industrial" data-id="ind2">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Industrial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2021</span><span class="sep">·</span><span>Nochixtlán, Oax.</span></div>
+          <h2>Bodega Agroindustrial Nochixtlán</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Almacenamiento a granel con carga de 8 t/m² en zona sísmica.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Losa industrial con fibras metálicas y muros de block de concreto vibrado.</p>
+          <div class="pf-card-tags"><span>Agroindustria</span><span>8 t/m²</span><span>1,800 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card pf-card--featured" data-category="industrial" data-id="ind3">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Industrial</span>
+          <span class="pf-badge pf-badge--gold">★ Destacado</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2024</span><span class="sep">·</span><span>Salina Cruz, Oax.</span></div>
+          <h2>Planta de Envasado Salina Cruz</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Ambiente marino agresivo con alta corrosión e inocuidad alimentaria.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Acero galvanizado en caliente con recubrimientos epóxicos y drenaje integral.</p>
+          <div class="pf-card-tags"><span>Anti-corrosión</span><span>Costera</span><span>2,600 m²</span></div>
+        </div>
+      </article>
+
+      <article class="pf-card" data-category="industrial" data-id="ind4">
+        <div class="pf-card-img" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80')">
+          <span class="pf-badge pf-badge--cat">Industrial</span>
+          <div class="pf-card-hover"><button class="pf-btn-detail">Ver detalle</button></div>
+        </div>
+        <div class="pf-card-body">
+          <div class="pf-card-meta"><span>2022</span><span class="sep">·</span><span>Ixtepec, Oax.</span></div>
+          <h2>Almacén Logístico Istmo</h2>
+          <p class="pf-card-challenge"><strong>Reto:</strong> Alta sismicidad del Istmo de Tehuantepec.</p>
+          <p class="pf-card-solution"><strong>Solución:</strong> Estructura dual con contravientos concéntricos y análisis modal espectral.</p>
+          <div class="pf-card-tags"><span>Sismo</span><span>Contravientos</span><span>3,400 m²</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="pf-empty" id="pfEmpty">
+      <div class="pf-empty-icon">⬡</div>
+      <p>No hay proyectos en esta categoría aún.</p>
+    </div>
+  </main>
+
+  <!-- ========== MODAL ========== -->
+  <div class="modal-overlay" id="portfolioModal">
+    <div class="modal-content modal-content--wide">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ========== CTA FINAL ========== -->
+  <section class="pf-cta-section">
+    <div class="pf-cta-inner">
+      <p class="section-eyebrow">¿Tienes un proyecto?</p>
+      <h2 class="section-title">Convierte tu idea en<br/><em>obra real</em></h2>
+      <p>Agenda una consultoría técnica gratuita de 30 minutos. Analizamos tu proyecto sin compromiso.</p>
+      <a href="index.html#contacto" class="btn-primary">Solicitar Consultoría Técnica</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="pf-footer">
+    <div class="pf-footer-inner">
+      <span class="pf-footer-logo">GFG</span>
+      <span class="pf-footer-name">Despacho de Arquitectos Gerardo F. González López</span>
+      <span class="pf-footer-phone">951 514 8837</span>
+      <span class="pf-footer-credit">Designed by <strong>NEXO DIGITAL</strong></span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/529515148837?text=Hola%2C%20me%20interesa%20una%20consultor%C3%ADa%20t%C3%A9cnica"
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="whatsapp-tooltip">¿Tienes un proyecto? Escríbenos</span>
+  </a>
+
+  <script src="portafolio.js"></script>
+</body>
+</html>

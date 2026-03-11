@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Despacho de Arquitectos Gerardo F. González López — Oaxaca</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVEGACIÓN ========== -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-main">GFG</span>
+      <span class="logo-sub">Gerardo F. González López · Oaxaca</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#portafolio">Portafolio</a></li>
+      <li><a href="#firma">La Firma</a></li>
+      <li><a href="#metodologia">Metodología</a></li>
+      <li><a href="#blog">Recursos</a></li>
+      <li><a href="#contacto" class="nav-cta">Consultoría</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">25 años de trayectoria · Oaxaca de Juárez, Oax.</p>
+      <h1 class="hero-title">
+        Espacios que<br /><em>trascienden</em>
+      </h1>
+      <p class="hero-subtitle">
+        Ingeniería de precisión y visión arquitectónica al servicio<br />
+        de proyectos residenciales, comerciales e industriales de alto impacto.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-primary">Solicitar Consultoría Técnica</a>
+        <a href="#portafolio" class="btn-ghost">Ver Portafolio</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Desplaza</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-target="25">0</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="180">0</span>
+        <span class="stat-label">Proyectos entregados</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="98">0</span>
+        <span class="stat-label">% Clientes satisfechos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTAFOLIO (destacados) ========== -->
+  <section id="portafolio">
+    <div class="section-header">
+      <p class="section-eyebrow">Nuestro trabajo</p>
+      <h2 class="section-title">Proyectos <em>Destacados</em></h2>
+      <p class="section-desc">Una selección de los retos técnicos más representativos del despacho.</p>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <article class="portfolio-card" data-category="residencial">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80')">
+          <div class="card-overlay">
+            <span class="card-category">Residencial · 2024</span>
+            <a href="portafolio.html" class="card-expand">Ver Proyecto</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Casa de Campo Sierra Juárez</h3>
+          <p class="card-challenge"><strong>Reto:</strong> Construcción en ladera boscosa a 2,400 msnm sin maquinaria mayor.</p>
+          <p class="card-solution"><strong>Solución:</strong> Madera laminada local con cimentación ciclópea de mínimo impacto ambiental.</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-category="comercial">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80')">
+          <div class="card-overlay">
+            <span class="card-category">Comercial · 2023</span>
+            <a href="portafolio.html" class="card-expand">Ver Proyecto</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Edificio Corporativo Centro Histórico</h3>
+          <p class="card-challenge"><strong>Reto:</strong> 8 niveles en zona patrimonial con restricciones INAH.</p>
+          <p class="card-solution"><strong>Solución:</strong> Fachada de cantera verde con estructura interior independiente.</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-category="infraestructura">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&q=80')">
+          <div class="card-overlay">
+            <span class="card-category">Infraestructura · 2022</span>
+            <a href="portafolio.html" class="card-expand">Ver Proyecto</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Marina y Muelle Turístico Huatulco</h3>
+          <p class="card-challenge"><strong>Reto:</strong> Cimentación costera con suelos saturados y normativa SEMARNAT.</p>
+          <p class="card-solution"><strong>Solución:</strong> Pilotes de acero hincados con plataforma de concreto marino resistente a cloruros.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA Ver más -->
+    <div class="portfolio-cta">
+      <p class="portfolio-cta-count">+15 proyectos documentados en nuestro portafolio completo</p>
+      <a href="portafolio.html" class="btn-ver-mas">
+        <span>Ver Portafolio Completo</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== MODAL PORTAFOLIO ========== -->
+  <div class="modal-overlay" id="portfolioModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ========== LA FIRMA ========== -->
+  <section id="firma">
+    <div class="firma-inner">
+      <div class="firma-text">
+        <p class="section-eyebrow">Nuestra historia</p>
+        <h2 class="section-title">La <em>Firma</em></h2>
+        <p class="firma-narrative">
+          Fundada hace 25 años, <strong>Despacho de Arquitectos Gerardo F. González López</strong> nació de la convicción de que la ingeniería rigurosa y el diseño arquitectónico no son disciplinas separadas, sino una sola mirada hacia el espacio construido.
+        </p>
+        <p class="firma-narrative">
+          Bajo la dirección de <strong>Gerardo F. Gonzales</strong>, ingeniero civil con más de dos décadas ejecutando proyectos de alta complejidad, el despacho ha consolidado una reputación de precisión técnica y entrega impecable.
+        </p>
+      </div>
+      <div class="firma-socios">
+        <div class="socio-card">
+          <div class="socio-avatar" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80')"></div>
+          <div class="socio-info">
+            <h3>Gerardo F. Gonzales</h3>
+            <span class="socio-role">Fundador & Director Técnico</span>
+            <p>25 años de experiencia en estructuras, cimentaciones especiales e infraestructura urbana.</p>
+          </div>
+        </div>
+        <div class="socio-divider">+</div>
+        <div class="socio-card">
+          <div class="socio-avatar" style="background-image: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80')"></div>
+          <div class="socio-info">
+            <h3>Nuevo Socio Estratégico</h3>
+            <span class="socio-role">Director de Proyectos Premium</span>
+            <p>Especialista en desarrollos de alto impacto en Polanco y zonas premium de CDMX. Su visión comercial y red de contactos eleva el despacho a una nueva dimensión.</p>
+          </div>
+        </div>
+      </div>
+      <div class="firma-fusion">
+        <p>La integración de ambas trayectorias crea un despacho que combina la solidez técnica de 25 años con la visión contemporánea de los mercados de mayor exigencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== METODOLOGÍA ========== -->
+  <section id="metodologia">
+    <div class="section-header">
+      <p class="section-eyebrow">Cómo trabajamos</p>
+      <h2 class="section-title">Metodología de <em>Precisión</em></h2>
+    </div>
+    <div class="metodologia-steps">
+
+      <div class="step-item" data-step="01">
+        <div class="step-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/><path d="M16 24l5 5 11-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="step-content">
+          <h3>Diagnóstico Técnico</h3>
+          <p>Análisis exhaustivo del sitio: estudios de mecánica de suelos, levantamiento topográfico, revisión normativa (NTC-CDMX) y evaluación de viabilidad técnica y financiera del proyecto.</p>
+        </div>
+      </div>
+
+      <div class="step-connector"></div>
+
+      <div class="step-item" data-step="02">
+        <div class="step-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M16 20h16M16 24h10M16 28h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="step-content">
+          <h3>Planeación de Ingeniería</h3>
+          <p>Desarrollo de ingeniería de detalle: memorias de cálculo, planos constructivos, especificaciones técnicas y cumplimiento de normativa CDMX. Sin atajos, sin interpretaciones ambiguas.</p>
+        </div>
+      </div>
+
+      <div class="step-connector"></div>
+
+      <div class="step-item" data-step="03">
+        <div class="step-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M12 36L24 12l12 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 28h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="step-content">
+          <h3>Ejecución y Control</h3>
+          <p>Supervisión de obra con bitácora diaria, control de calidad de materiales y seguimiento de programas. La experiencia en desarrollos Polanco garantiza estándares de ejecución de primer nivel.</p>
+        </div>
+      </div>
+
+      <div class="step-connector"></div>
+
+      <div class="step-item" data-step="04">
+        <div class="step-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 8v4M24 36v4M8 24h4M36 24h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <div class="step-content">
+          <h3>Entrega y Garantía</h3>
+          <p>Cierre administrativo completo: dictámenes finales, trámites ante autoridades, dossier técnico del proyecto y garantía formal del despacho por escrito. Entregamos proyectos, no solo obras.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== BLOG TÉCNICO ========== -->
+  <section id="blog">
+    <div class="section-header">
+      <p class="section-eyebrow">Centro de recursos</p>
+      <h2 class="section-title">Consultoría <em>Editorial</em></h2>
+      <p class="section-desc">Conocimiento técnico que genera valor antes de firmar el primer contrato.</p>
+    </div>
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-tag">Cimentaciones</div>
+        <h3>¿Cómo optimizar costos en cimentación sin comprometer la seguridad?</h3>
+        <p>La elección del sistema de cimentación representa hasta el 30% del costo estructural. Analizamos cuándo conviene una losa de cimentación versus pilotes y cómo la ingeniería de detalle reduce sorpresas en obra.</p>
+        <a href="#" class="blog-link">Leer artículo →</a>
+      </article>
+
+      <article class="blog-card blog-card--featured">
+        <div class="blog-tag">Estructuras</div>
+        <h3>Seguridad estructural en desarrollos verticales: lo que todo desarrollador debe exigir</h3>
+        <p>En la CDMX, construir en altura implica riesgos sísmicos específicos. Explicamos los sistemas de protección sísmica actuales y por qué el dictamen de un ingeniero independiente es su mejor inversión.</p>
+        <a href="#" class="blog-link">Leer artículo →</a>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-tag">Normativa</div>
+        <h3>Permisos de construcción en CDMX 2024: guía para no perder tiempo ni dinero</h3>
+        <p>El proceso de tramitación ante SEDUVI puede demorar meses si no se cuenta con la documentación correcta. Aquí el checklist que usamos en todos nuestros proyectos.</p>
+        <a href="#" class="blog-link">Leer artículo →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto">
+    <div class="contacto-inner">
+      <div class="contacto-texto">
+        <p class="section-eyebrow">Hablemos</p>
+        <h2 class="section-title">Inicia tu <em>Proyecto</em></h2>
+        <p>Completar este formulario nos permite evaluar tu proyecto antes de la primera reunión. Solo trabajamos con proyectos donde podemos garantizar resultados.</p>
+        <div class="contacto-datos">
+          <div class="dato-item">
+            <span class="dato-icon">📍</span>
+            <span>Av. José María Morelos 1402-1, Ruta Independencia, Centro, Oaxaca de Juárez, Oax. 68000</span>
+          </div>
+          <div class="dato-item">
+            <span class="dato-icon">📞</span>
+            <span>951 514 8837</span>
+          </div>
+          <div class="dato-item">
+            <span class="dato-icon">✉️</span>
+            <span>contacto@gfggonzalez.mx</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contacto-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Lic. Carlos Ramírez" required />
+          <span class="form-error" id="error-nombre"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" placeholder="carlos@empresa.com" required />
+          <span class="form-error" id="error-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono / WhatsApp *</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+52 55 0000 0000" required />
+          <span class="form-error" id="error-telefono"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tipo">Tipo de proyecto *</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Seleccionar...</option>
+              <option value="residencial">Residencial</option>
+              <option value="comercial">Comercial</option>
+              <option value="infraestructura">Infraestructura</option>
+              <option value="industrial">Industrial</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span class="form-error" id="error-tipo"></span>
+          </div>
+          <div class="form-group">
+            <label for="presupuesto">Presupuesto estimado *</label>
+            <select id="presupuesto" name="presupuesto" required>
+              <option value="">Seleccionar...</option>
+              <option value="hasta500k">Hasta $500K MXN</option>
+              <option value="500k-2m">$500K – $2M MXN</option>
+              <option value="2m-5m">$2M – $5M MXN</option>
+              <option value="mas5m">Más de $5M MXN</option>
+            </select>
+            <span class="form-error" id="error-presupuesto"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ubicacion">Ubicación del proyecto</label>
+          <input type="text" id="ubicacion" name="ubicacion" placeholder="Colonia, Alcaldía o Municipio" />
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Describe brevemente tu proyecto</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ej: Construcción de casa habitación de 350m² en Lomas de Chapultepec, terreno plano, 2 niveles + roof garden..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+          <span class="btn-text">Enviar Pre-calificación</span>
+          <span class="btn-loader" id="btnLoader"></span>
+        </button>
+        <div class="form-success" id="formSuccess">
+          ✓ Tu solicitud fue recibida. Te contactaremos en menos de 24 horas hábiles.
+        </div>
+      </form>
+    </div>
+
+    <!-- Mapa -->
+    <div class="mapa-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.9!2d-96.7269!3d17.0669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c722b0a54a07b5%3A0x0!2sAv.%20Jos%C3%A9%20Mar%C3%ADa%20Morelos%201402-1%2C%20Centro%2C%20Oaxaca%20de%20Ju%C3%A1rez%2C%20Oax.%2068000!5e0!3m2!1ses!2smx!4v1700000000"
+        width="100%"
+        height="300"
+        style="border:0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación Despacho Gerardo F. González López — Oaxaca"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">GFG</div>
+        <p>Despacho de Arquitectos</p>
+        <p>Gerardo F. González López</p>
+        <p class="footer-tagline">Diseñando Oaxaca desde hace 25 años.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#firma">La Firma</a></li>
+          <li><a href="#metodologia">Metodología</a></li>
+          <li><a href="#blog">Recursos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Despacho de Arquitectos Gerardo F. González López. Todos los derechos reservados.</p>
+      <p class="footer-credit">Designed by <strong>NEXO DIGITAL</strong></p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOTANTE ========== -->
+  <a href="https://wa.me/529515148837?text=Hola%2C%20me%20interesa%20una%20consultor%C3%ADa%20t%C3%A9cnica%20con%20el%20Despacho%20Gerardo%20F.%20Gonz%C3%A1lez%20L%C3%B3pez" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="whatsapp-tooltip">¿Tienes un proyecto? Escríbenos</span>
+  </a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
